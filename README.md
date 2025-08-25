@@ -28,6 +28,27 @@ cd NeeCLI
 # Install dependencies
 pip install -e .
 ```
+--or
+### Install the package from Pypi it is live!
+
+```bash
+# Create a virtual environment
+uv venv
+
+# Activate it (Windows PowerShell)
+.venv\Scripts\Activate.ps1
+
+# Or activate it (Windows Command Prompt)
+.venv\Scripts\activate.bat
+
+# Or activate it (Unix/Linux/macOS)
+source .venv/bin/activate
+```
+
+```bash
+pip install NeeCLI
+```
+
 
 ## Configuration
 
