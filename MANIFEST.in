@@ -1,0 +1,11 @@
+include README.md
+include pyproject.toml
+include *.py
+recursive-include tests *.py
+global-exclude __pycache__
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude .git*
+global-exclude .env
+global-exclude chat_history.json

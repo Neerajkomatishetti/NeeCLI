@@ -1,0 +1,37 @@
+[project]
+name = "neecli"
+version = "0.3.0"
+description = "A CLI to chat with LLMs (Groq/OpenAI etc.)"
+authors = [{ name="Neeraj" }]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["cli", "llm", "chat", "groq", "openai", "ai"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Chat",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "click>=8.0",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+neecli = "cli:cli"
+
+
+
+[build-system]
+requires = ["hatchling>=1.26.1"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
